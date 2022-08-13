@@ -1,0 +1,83 @@
+@font-face {
+    font-family: CursedTimerUlil;
+    src: url("./CursedTimerUlil-Aznm.ttf") format("opentype");
+}
+#container {
+    margin: 50px 0px;
+}
+body {
+    color: #d4d4d4;
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    font-family: CursedTimerUlil;
+}
+#display {
+    height: 120px;
+    max-width: 470px;
+    background-color: black;
+    margin: 10px auto;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: CursedTimerUlil;
+    font-size: 1.6em;
+}
+#input {
+    color: rgb(150, 150, 150);
+    margin-right: 10px;
+    height: 0px;
+}
+#result {
+    color: greenyellow;
+    margin-right: 10px;
+    height: 0px;
+}
+#calculator {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: 450px;
+    row-gap: 7px;
+    column-gap: 7px;
+    font-size: 1.5em;
+}
+.span2 {
+    grid-column: span 2;
+}
+.span3 {
+    grid-column: span 3;
+}
+.calbutton {
+    height: 90px;
+    font-size: 0.8em;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+.calbutton:hover {
+    filter: brightness(85%);
+}
+.calbutton:nth-child(17) {
+    color: #ff8800;
+}
+.orange {
+    background-color: #ff8800;
+}
+.grey {
+    background-color: #d4d4d4;
+}
+footer {
+    font-family: CursedTimerUlil;
+    color: #d4d4d4;
+    position: relative;
+    bottom: 5px;
+}
+a {
+    text-decoration: none;
+    color: #d4d4d4;
+}
